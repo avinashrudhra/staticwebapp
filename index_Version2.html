@@ -1,0 +1,127 @@
+co<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample CSS + HTML Website</title>
+  <meta name="description" content="A simple responsive sample website built with HTML & CSS." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">SampleSite</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Beautifully simple HTML & CSS</h1>
+          <p>Responsive layout, modern typography, and accessible markup — all without JavaScript. Use this as a starter for a small project or landing page.</p>
+          <p class="cta-row">
+            <a class="btn btn-primary" href="#features">Get Started</a>
+            <a class="btn btn-ghost" href="#gallery">View Gallery</a>
+          </p>
+        </div>
+        <figure class="hero-media" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b8b0c4e4b3a4b2a9df6b3e1a3b1f2c0" alt="Stylish workspace with laptop and plants">
+        </figure>
+      </div>
+    </section>
+
+    <section id="features" class="features section">
+      <div class="container">
+        <h2 class="section-title">What you'll get</h2>
+        <p class="section-sub">Small, fast, and easy to customize.</p>
+
+        <div class="grid features-grid">
+          <article class="card">
+            <svg class="icon" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2L2 7v6c0 5 3.7 9.7 9 11 5.3-1.3 9-6 9-11V7l-10-5zM11 14H8v-2h3v2zm0-4H8V8h3v2zm5 4h-3v-2h3v2zm0-4h-3V8h3v2z"/></svg>
+            <h3>Semantic markup</h3>
+            <p>Clean, well-structured HTML that helps accessibility and search engines.</p>
+          </article>
+
+          <article class="card">
+            <svg class="icon" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3l9 4.5v9L12 21 3 16.5v-9L12 3zm0 2.18L6.5 7.5 12 10.82 17.5 7.5 12 5.18zM5 9.75v4.13L12 16l7-2.12V9.75L12 12.18 5 9.75z"/></svg>
+            <h3>Responsive layout</h3>
+            <p>Flexbox and CSS Grid give a layout that adapts to phones, tablets and desktops.</p>
+          </article>
+
+          <article class="card">
+            <svg class="icon" width="48" height="48" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 110 10 5 5 0 010-10zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            <h3>Customizable</h3>
+            <p>Variables and utility classes in the stylesheet make tweaking quick and safe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-sub">A responsive image grid (images from Unsplash).</p>
+
+        <div class="grid image-grid">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Abstract pattern">
+          <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop" alt="Workspace desk">
+          <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=800&auto=format&fit=crop" alt="Sunlit architecture">
+          <img src="https://images.unsplash.com/photo-1501877008226-4fca48f0b4ea?q=80&w=800&auto=format&fit=crop" alt="Minimal interior">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Feel free to drop a message — form is non-functional demo only.</p>
+
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Say hello..." required></textarea>
+          </div>
+
+          <div class="form-row form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> SampleSite — Built with HTML & CSS.</p>
+      <p class="muted">No JavaScript required to view the layout. (Small script included inline only to set the year.)</p>
+    </div>
+  </footer>
+
+  <script>
+    // small progressive enhancement: update year
+    try {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    } catch(e) {}
+  </script>
+</body>
+</html>
